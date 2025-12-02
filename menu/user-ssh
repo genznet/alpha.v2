@@ -49,7 +49,7 @@ sleep 1
 baris_panjang
 echo -e "${ungu}  Terimakasih Telah Menggunakan ${Xark}"
 echo -e "${ungu}          Script Credit ${Xark}"
-echo -e "${ungu}          $nama ${Xark}"
+echo -e "${ungu}          $GENZNET ${Xark}"
 baris_panjang
 }
 loading() {

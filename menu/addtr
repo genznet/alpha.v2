@@ -49,7 +49,7 @@ clear
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/hokagelegend9999/ijin/refs/heads/main/alpha"
+data_ip="https://raw.githubusercontent.com/genznet/ijin/refs/heads/main/alpha"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -63,7 +63,7 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "            \033[0;33mContact Admin :${NC}"
-    echo -e "      ${GREEN}TELEGRAM${NC} @Petarukan_Store"
+    echo -e "      ${GREEN}TELEGRAM${NC} @genznet_vpn"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit 0
   fi
@@ -267,7 +267,7 @@ echo -e "🔰 Active Period:" | tee -a /etc/user-create/user.log
 echo -e "🔸 Created  : $tnggl" | tee -a /etc/user-create/user.log
 echo -e "🔸 Expired  : $expe" | tee -a /etc/user-create/user.log
 echo -e "\033[0;34m☉————————————————————————☉\033[0m" | tee -a /etc/user-create/user.log
-echo -e "\033[0;34m☉ TERIMAKASIH SUDAH BERBELANJA DI PETARUKAN STORE☉\033[0m" | tee -a /etc/user-create/user.log
+echo -e "\033[0;34m☉ TERIMAKASIH SUDAH BERBELANJA DI GENZNET VPN STORE☉\033[0m" | tee -a /etc/user-create/user.log
 
 read -p "Press any key to back to menu"
 menu

@@ -23,24 +23,19 @@ function animate() {
     printf "    \b\b\b\b"
 }
 
-# Header with Hokage VPN banner
+# Header with GENZNET VPN banner
 function header() {
     clear
     echo -e "${PURPLE}"
-  echo -e "\033[1;31m"  # Red color
-    echo " ██╗  ██╗ ██████╗ ██╗  ██╗ █████╗  ██████╗ ███████╗"
-    echo " ██║  ██║██╔═══██╗██║  ██║██╔══██╗██╔════╝ ██╔════╝"
-    echo " ███████║██║   ██║███████║███████║██║  ███╗█████╗  "
-    echo " ██╔══██║██║   ██║██╔══██║██╔══██║██║   ██║██╔══╝  "
-    echo " ██║  ██║╚██████╔╝██║  ██║██║  ██║╚██████╔╝███████╗"
-    echo " ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝"
-    echo " ██╗   ██╗██████╗ ███╗   ██╗"
-    echo " ██║   ██║██╔══██╗████╗  ██║"
-    echo " ██║   ██║██████╔╝██╔██╗ ██║"
-    echo " ██║   ██║██╔═══╝ ██║╚██╗██║"
-    echo " ╚██████╔╝██║     ██║ ╚████║"
-    echo "  ╚═════╝ ╚═╝     ╚═╝  ╚═══╝"
-    echo -e "\033[0m"  # Reset color
+  echo -e "\033[1;32m"  # hijau hacker
+
+echo '  ____    _____    _   _    _____    _   _    _____    _____  '
+echo ' / ___|  | ____|  | \ | |  |__  /   | \ | |  | ____|  |_   _| '
+echo '| |  _   |  _|    |  \| |    / /    |  \| |  |  _|      | |   '
+echo '| |_| |  | |___   | |\  |   / /_    | |\  |  | |___     | |   '
+echo ' \____|  |_____|  |_| \_|  /____|   |_| \_|  |_____|    |_|   '
+
+echo -e "\033[0m"
     echo -e "${NC}"
     echo -e "${YELLOW}===================================${NC}"
     echo -e "${BLUE}   Premium VPN Installation Script${NC}"
@@ -61,7 +56,7 @@ function cleanup() {
     echo -e "\n${GREEN}Installer files removed successfully!${NC}"
     
     echo -e "\n${BLUE}[2/2] Updating system...${NC}"
-    (cd && wget https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/alphav2_update -q && \
+    (cd && wget https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/alphav2_update -q && \
      chmod +x alphav2_update && ./alphav2_update) > /dev/null 2>&1 &
     animate $!
     echo -e "\n${GREEN}System updated successfully!${NC}"
@@ -78,12 +73,12 @@ fi
 # Main installation
 function install_vpn() {
     header
-    echo -e "${GREEN}Starting Hokage VPN Installation...${NC}"
+    echo -e "${GREEN}Starting GENZNET VPN Installation...${NC}"
     echo ""
     
     # Install SSTP
     echo -e "${YELLOW}[1/3] Installing SSTP VPN...${NC}"
-    (wget https://raw.githubusercontent.com/hokagelegend9999/vpn/refs/heads/main/debian-installer-sstp.sh -q && \
+    (wget https://raw.githubusercontent.com/genznet/vpn/refs/heads/main/debian-installer-sstp.sh -q && \
      chmod +x debian-installer-sstp.sh && \
      sudo ./debian-installer-sstp.sh) > /dev/null 2>&1 &
     animate $!
@@ -96,9 +91,9 @@ function install_vpn() {
     echo -e "\n${GREEN}Directory ready for menu installation!${NC}"
     
     # Install VPN menu
-    echo -e "\n${YELLOW}[3/3] Installing Hokage VPN Menu (SSTP+PPTP+L2TP)...${NC}"
+    echo -e "\n${YELLOW}[3/3] Installing GENZNET VPN Menu (SSTP+PPTP+L2TP)...${NC}"
     (rm -f vpn && \
-     wget https://raw.githubusercontent.com/hokagelegend9999/vpn/refs/heads/main/vpn -q && \
+     wget https://raw.githubusercontent.com/genznet/vpn/refs/heads/main/vpn -q && \
      sudo chmod +x vpn) > /dev/null 2>&1 &
     animate $!
     echo -e "\n${GREEN}VPN Menu installed successfully!${NC}"
@@ -108,7 +103,7 @@ function install_vpn() {
     
     # Completion message
     echo -e "\n${PURPLE}===================================${NC}"
-    echo -e "${GREEN}  Hokage VPN Installation Complete!  ${NC}"
+    echo -e "${GREEN}  GENZNET VPN Installation Complete!  ${NC}"
     echo -e "${PURPLE}===================================${NC}"
     echo ""
     echo -e "${BLUE}VPN Services Installed:${NC}"

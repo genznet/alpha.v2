@@ -1,6 +1,6 @@
 #!/bin/bash
 # Edition : Stable Edition V3.0
-# Auther  : Hokage Legend
+# Auther  : GENZNET
 # (C) Copyright 2024
 # =========================================
 

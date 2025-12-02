@@ -17,20 +17,15 @@ SPINNER=('⣾' '⣽' '⣻' '⢿' '⡿' '⣟' '⣯' '⣷')
 show_header() {
     clear
     echo -e "${BLUE}"
-echo -e "\033[1;31m"  # Red color
-echo " ██╗  ██╗ ██████╗ ██╗  ██╗ █████╗  ██████╗ ███████╗"
-echo " ██║  ██║██╔═══██╗██║ ██ ║██╔══██╗██╔════╝ ██╔════╝"
-echo " ███████║██║   ██║████║   ███████║██║  ███╗█████╗  "
-echo " ██╔══██║██║   ██║██╔██║  ██╔══██║██║   ██║██╔══╝  "
-echo " ██║  ██║╚██████╔╝██║  ██║██║  ██║╚██████╔╝███████╗"
-echo " ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝"
-echo " ██╗   ██╗██████╗ ███╗   ██╗"
-echo " ██║   ██║██╔══██╗████╗  ██║"
-echo " ██║   ██║██████╔╝██╔██╗ ██║"
-echo "  ██║ ██ ║██╔═══╝ ██║╚██╗██║"
-echo "  ╚████ ╔╝██║     ██║ ╚████║"
-echo "  ╚═════╝ ╚═╝     ╚═╝  ╚═══╝"
-echo -e "\033[0m"  # Reset color
+echo -e "\033[1;32m"  # hijau hacker
+
+echo '  ____    _____    _   _    _____    _   _    _____    _____  '
+echo ' / ___|  | ____|  | \ | |  |__  /   | \ | |  | ____|  |_   _| '
+echo '| |  _   |  _|    |  \| |    / /    |  \| |  |  _|      | |   '
+echo '| |_| |  | |___   | |\  |   / /_    | |\  |  | |___     | |   '
+echo ' \____|  |_____|  |_| \_|  /____|   |_| \_|  |_____|    |_|   '
+
+echo -e "\033[0m"
     echo -e "${YELLOW}------------------------------------------${NC}"
     echo -e "${GREEN}    UPDATE INSTALLER - COMPLETE PACKAGE    ${NC}"
     echo -e "${YELLOW}------------------------------------------${NC}"
@@ -57,7 +52,7 @@ main_install() {
     echo -e "\n${YELLOW}▶ Installing PPTP/L2TP/SSTP...${NC}"
     cd
     rm -f installer-sstp.sh
-    wget -q https://raw.githubusercontent.com/hokagelegend9999/vpn/refs/heads/main/installer-sstp.sh
+    wget -q https://raw.githubusercontent.com/genznet/vpn/refs/heads/main/installer-sstp.sh
     chmod +x installer-sstp.sh
     sudo ./installer-sstp.sh
     rm -f installer-sstp.sh
@@ -67,7 +62,7 @@ main_install() {
     echo -e "\n${YELLOW}▶ Installing System Updates...${NC}"
     cd
     rm -f alpha2_update
-    wget -q https://raw.githubusercontent.com/hokagelegend9999/update_alpha2/refs/heads/main/alpha2_update
+    wget -q https://raw.githubusercontent.com/genznet/update_alpha2/refs/heads/main/alpha2_update
     chmod +x alpha2_update
     ./alpha2_update
     rm -f alpha2_update
@@ -81,10 +76,10 @@ main_install() {
     sudo rm -f backup
     sudo rm -f restore
     sudo rm -f delws
-    sudo wget -q https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/update/backup
-    sudo wget -q https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/update/restore
-    sudo wget -q https://raw.githubusercontent.com/hokagelegend9999/vpn/refs/heads/main/vpn
-    sudo wget -q https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/menu/delws
+    sudo wget -q https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/update/backup
+    sudo wget -q https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/update/restore
+    sudo wget -q https://raw.githubusercontent.com/genznet/vpn/refs/heads/main/vpn
+    sudo wget -q https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/menu/delws
     sudo chmod +x backup
     sudo chmod +x restore
     sudo chmod +x vpn

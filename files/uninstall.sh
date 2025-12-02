@@ -2,11 +2,11 @@
 
 echo ""
 echo "#########################################################"
-echo "## -> HOKAGE LEGEND-Server by HOKAGE-ID Software       ##"
-echo "## -> Author : Hokage Legend                           ##"
-echo "## -> Email : hokagelegend9999@gmail.com               ##"
-echo "## -> Wa    : 087726917005                             ##"
-echo "## -> (c) 2023-2025, Hokage Legend-ID Software         ##"
+echo "## -> GENZNET-Server by GENZNET-ID Software       ##"
+echo "## -> Author : GENZNET                           ##"
+echo "## -> Email : genta1nugraha@gmail.com               ##"
+echo "## -> Wa    : 089664810603                             ##"
+echo "## -> (c) 2023-2025, GENZNET-ID Software         ##"
 echo "#########################################################"
 echo ""
 

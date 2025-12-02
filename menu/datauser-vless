@@ -16,7 +16,7 @@ BlueBe="\033[5;34m"
 if [[ -e /etc/xray/username ]]; then
     nama=$(cat /etc/xray/username)
 else
-    nama="HOKAGE LEGEND"
+    nama="GENZNET"
 fi
 
 # --- FUNGSI GARIS ---
@@ -37,7 +37,7 @@ function Sc_Credit(){
     baris_panjang
     echo -e "${ungu}  Terimakasih Telah Menggunakan ${Xark}"
     echo -e "${ungu}           Script Credit ${Xark}"
-    echo -e "${ungu}           $nama ${Xark}"
+    echo -e "${ungu}           $GENZNET ${Xark}"
     baris_panjang
     echo ""
     read -rp "press any key for back"

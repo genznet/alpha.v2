@@ -1,7 +1,7 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition Lite  2.0
-# Auther  : Hokage Legend
+# Auther  : GENZNET
 # (C) Copyright 2023
 # =========================================
 # pewarna hidup
@@ -57,10 +57,10 @@ service sshd restart
 #konfigurasi slowdns
 rm -rf /etc/slowdns
 mkdir -m 777 /etc/slowdns
-wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/slowdns/server.key"
-wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/slowdns/server.pub"
-wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/slowdns/sldns-server"
-wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/slowdns/sldns-client"
+wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/slowdns/server.key"
+wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/slowdns/server.pub"
+wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/slowdns/sldns-server"
+wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/slowdns/sldns-client"
 cd
 chmod +x /etc/slowdns/server.key
 chmod +x /etc/slowdns/server.pub
@@ -75,7 +75,7 @@ cd
 #install client-sldns.service
 cat > /etc/systemd/system/client-sldns.service << END
 [Unit]
-Description=Client SlowDNS By Hokage Legend
+Description=Client SlowDNS By GENZNET
 Documentation=https://nekopoi.care
 After=network.target nss-lookup.target
 
