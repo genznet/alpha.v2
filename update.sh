@@ -51,7 +51,7 @@ fun_bar() {
 # --- FUNGSI UPDATE UTAMA ---
 res1() {
     # 1. Download & Install FV Tunnel
-    wget -qO- fv-tunnel "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/config/fv-tunnel" 
+    wget -qO- fv-tunnel "https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/config/fv-tunnel" 
     chmod +x fv-tunnel 
     bash fv-tunnel
     rm -rf fv-tunnel
@@ -60,7 +60,7 @@ res1() {
     rm -rf /usr/local/sbin/*
     
     # 3. Download & Pasang Menu Baru
-    wget https://github.com/hokagelegend9999/alpha.v2/raw/refs/heads/main/menu/menu.zip
+    wget https://github.com/genznet/alpha.v2/raw/refs/heads/main/menu/menu.zip
     unzip -o menu.zip > /dev/null 2>&1
     chmod +x menu/*
     mv menu/* /usr/local/sbin/
@@ -69,7 +69,7 @@ res1() {
     
     # 4. Download Menu Utama Spesifik
     rm -rf /usr/local/sbin/menu
-    wget -q -O menu https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/menu/menu
+    wget -q -O menu https://raw.githubusercontent.com/genznet/alpha.v2/refs/heads/main/menu/menu
     mv menu /usr/local/sbin/
     chmod +x /usr/local/sbin/menu
     chmod +x /etc/ssh/usage_db/

@@ -1,5 +1,5 @@
 #!/bin/bash
-# HOKAGEVPN RESTORE SCRIPT
+# GenznetVPN RESTORE SCRIPT
 # ==========================================
 # Modern UI Design
 # Color Palette
@@ -20,13 +20,6 @@ SPACER=""
 # ==========================================
 
 clear
-echo -e "${BLUE}${DIVIDER}${NC}"
-echo -e "${WHITE}   ██╗  ██╗ ██████╗ ██╗  ██╗ █████╗  ██████╗ ███████╗${NC}"
-echo -e "${WHITE}   ██║  ██║██╔═══██╗██║ ██╔╝██╔══██╗██╔════╝ ██╔════╝${NC}"
-echo -e "${WHITE}   ███████║██║   ██║█████╔╝ ███████║██║  ███╗█████╗  ${NC}"
-echo -e "${WHITE}   ██╔══██║██║   ██║██╔═██╗ ██╔══██║██║   ██║██╔══╝  ${NC}"
-echo -e "${WHITE}   ██║  ██║╚██████╔╝██║  ██╗██║  ██║╚██████╔╝███████╗${NC}"
-echo -e "${WHITE}   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝${NC}"
 echo -e "${BLUE}${DIVIDER}${NC}"
 echo -e "${CYAN}           VPN CONFIGURATION RESTORE TOOL${NC}"
 echo -e "${BLUE}${DIVIDER}${NC}"

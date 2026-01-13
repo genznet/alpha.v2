@@ -44,7 +44,7 @@ data=( `cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq`)
 for akun in "${data[@]}"
 do
     # --- AMBIL INFO STATIS (LIMIT) ---
-    iplimit=$(cat /etc/hokage/limit/trojan/ip/${akun} 2>/dev/null)
+    iplimit=$(cat /etc/genznet/limit/trojan/ip/${akun} 2>/dev/null)
     
     # --- AMBIL INFO KUOTA ---
     byte_usage=$(cat /etc/trojan/${akun} 2>/dev/null)

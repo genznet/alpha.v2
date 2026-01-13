@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==========================================
-#  ZIVPN MANAGER - HOKAGE LEGEND STYLE
+#  ZIVPN MANAGER - Genznet STYLE
 # ==========================================
 
 CONFIG_FILE="/etc/zivpn/config.json"
@@ -123,7 +123,7 @@ Berakhir Pada        : $exp_date
     echo -e "UDP SERVER    Isi Dengan       : $domain"
     echo -e "UDP PASSWORD Isi dengan       : $username"
     echo -e "\033[1;93m━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-    echo -e "    \033[5m\033[35mTHANKS YOU FOR \033[34mUSING SCRIPT \033[31mHOKAGE LEGEND\033[0m"
+    echo -e "    \033[5m\033[35mTHANKS YOU FOR \033[34mUSING SCRIPT \033[31mGenznet\033[0m"
     echo -e ""
     read -n 1 -s -r -p "Press any key to back on menu"
 }

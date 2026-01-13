@@ -13,7 +13,7 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # 2. Download Binary UDP Custom
 cd /etc/udp
-wget -q -O udp-custom "https://github.com/hokagelegend9999/alpha.v2/raw/refs/heads/main/udp-custom/udp-custom-linux-amd64"
+wget -q -O udp-custom "https://github.com/genznet/alpha.v2/raw/refs/heads/main/udp-custom/udp-custom-linux-amd64"
 chmod +x udp-custom
 
 # 3. Buat Config JSON

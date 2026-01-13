@@ -443,7 +443,7 @@ async def ssh(event):
 
         msg = f"""
 ━━━━━━━━━━━━━━━━━━━━━━━ 
-** HOKAGE PREMIUM TUNNELING **
+** GENZNET PREMIUM TUNNELING **
 ━━━━━━━━━━━━━━━━━━━━━━━ 
 ━━━━━━━━━━━━━━━━━━━━━━━ 
  **⚠️ MENU SSH & OVPN ⚠️**
@@ -452,7 +452,7 @@ async def ssh(event):
 🟢 **» Hostname/IP:** `{DOMAIN}`
 🟢 **» ISP:** `{isp}`
 🟢 **» Country:** `{country}`
-🇮🇩 **» @HokageLegend**
+🇮🇩 **» @Genznet_vpn**
 ━━━━━━━━━━━━━━━━━━━━━━━ 
 """
         await event.edit(msg, buttons=inline)
